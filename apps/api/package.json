@@ -1,0 +1,13 @@
+{
+  "name": "@axons/api",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "license": "MPL-2.0",
+  "author": {
+    "email": "nprin@axons.fr"
+  },
+  "dependencies": {
+    "@axons/hateoas-nestjs": "workspace:*"
+  }
+}

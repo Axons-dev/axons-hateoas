@@ -1,0 +1,40 @@
+<a routerLink="/cases">Back to cases</a>
+
+<section class="card" style="margin-top:1rem;">
+  @if (state().loading) {
+    <p>Loading...</p>
+  }
+
+  @if (state().error) {
+    <p>{{ state().error }}</p>
+  }
+
+  @if (state().resource; as resource) {
+    <header>
+      <h2>{{ resource.properties.title }}</h2>
+      <p><span class="badge">{{ resource.properties.status }}</span></p>
+      <p>{{ resource.properties.description }}</p>
+    </header>
+
+    @if (resource.properties.lastDecisionReason) {
+      <p><strong>Last reason:</strong> {{ resource.properties.lastDecisionReason }}</p>
+    }
+
+    <app-case-action-bar
+      [actions]="resource.actions"
+      [running]="state().actionRunning"
+      (run)="onAction($event)"
+    />
+
+    <app-action-payload-form
+      [action]="pendingAction()"
+      (submit)="submitPayload($event)"
+      (cancel)="pendingAction.set(null)"
+    />
+
+    <details>
+      <summary>Raw hypermedia response</summary>
+      <pre>{{ resource.raw | json }}</pre>
+    </details>
+  }
+</section>

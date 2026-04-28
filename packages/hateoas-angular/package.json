@@ -1,0 +1,39 @@
+{
+  "name": "@axons/hateoas-angular",
+  "version": "0.1.0",
+  "license": "MPL-2.0",
+  "author": {
+    "email": "nprin@axons.fr"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.spec.js",
+    "!dist/**/*.spec.d.ts",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "prepack": "tsc -b tsconfig.json"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=17.0.0"
+  },
+  "dependencies": {
+    "@axons/hateoas-core": "workspace:^",
+    "@axons/hateoas-fetch": "workspace:^",
+    "@axons/hateoas-siren": "workspace:^"
+  }
+}

@@ -1,0 +1,27 @@
+<section class="card">
+  <div style="display:flex; justify-content:space-between; gap:1rem; align-items:center;">
+    <div>
+      <h2>Cases</h2>
+      <p>Changing the role refreshes available actions on detail pages.</p>
+    </div>
+    <button class="secondary" type="button" (click)="business.load()">Refresh</button>
+  </div>
+
+  @if (state().loading) {
+    <p>Loading...</p>
+  }
+
+  @if (state().error) {
+    <p>{{ state().error }}</p>
+  }
+
+  <div style="display:grid; gap:0.75rem;">
+    @for (entity of state().collection?.entities ?? []; track entity.properties['id']) {
+      <a class="card" [routerLink]="['/cases', entity.properties['id']]" style="text-decoration:none; display:block;">
+        <strong>{{ entity.properties['title'] }}</strong>
+        <p><span class="badge">{{ entity.properties['status'] }}</span></p>
+        <small>Owner: {{ entity.properties['createdById'] }}</small>
+      </a>
+    }
+  </div>
+</section>

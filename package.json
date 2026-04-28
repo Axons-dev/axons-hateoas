@@ -1,0 +1,51 @@
+{
+  "name": "@axons/hateoas-demo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "license": "MPL-2.0",
+  "author": {
+    "email": "nprin@axons.fr"
+  },
+  "description": "Demo repo: Siren/HATEOAS client TypeScript framework-agnostic + NestJS composer + Angular integration.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "start:api": "tsx --tsconfig apps/api/tsconfig.json apps/api/src/main.ts",
+    "start:web": "ng serve angular-demo",
+    "build:packages": "tsc -b packages/hateoas-core packages/hateoas-siren packages/hateoas-fetch packages/hateoas-nestjs packages/hateoas-nestjs-typeorm packages/hateoas-angular",
+    "pack:packages": "pnpm build:packages && pnpm --filter './packages/*' pack",
+    "publish:packages": "pnpm build:packages && pnpm --filter './packages/*' publish --access public",
+    "publish:packages:dry-run": "pnpm build:packages && pnpm --filter './packages/*' publish --access public --dry-run --no-git-checks",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "echo \"Add eslint config when the API contracts are stabilized.\""
+  },
+  "dependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.20",
+    "zone.js": "^0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}

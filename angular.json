@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "apps",
+  "projects": {
+    "angular-demo": {
+      "projectType": "application",
+      "root": "apps/angular-demo",
+      "sourceRoot": "apps/angular-demo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/apps/angular-demo",
+            "index": "apps/angular-demo/src/index.html",
+            "browser": "apps/angular-demo/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "apps/angular-demo/tsconfig.app.json",
+            "styles": ["apps/angular-demo/src/styles.css"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "angular-demo:build"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}

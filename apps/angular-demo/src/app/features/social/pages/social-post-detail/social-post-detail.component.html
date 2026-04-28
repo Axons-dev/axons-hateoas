@@ -1,0 +1,92 @@
+<a routerLink="/social">Back to feed</a>
+
+<section class="card" style="margin-top:1rem;">
+  @if (state().loading) {
+    <p>Loading...</p>
+  }
+
+  @if (state().error) {
+    <p>{{ state().error }}</p>
+  }
+
+  @if (state().resource; as resource) {
+    <article>
+      <img
+        class="post-image post-image-detail"
+        [src]="resource.properties.imageUrl"
+        [alt]="resource.properties.body"
+      />
+      <header style="display:flex; justify-content:space-between; gap:1rem; align-items:start;">
+        <div>
+          <h2>{{ resource.properties.authorName }}</h2>
+          <p>{{ resource.properties.authorHandle }}</p>
+        </div>
+        <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap; justify-content:end;">
+          @if (resource.properties.isAuthor) {
+            <span class="badge own">Your post</span>
+          }
+          <span class="badge">{{ resource.properties.commentCount }} comments</span>
+        </div>
+      </header>
+
+      <p style="font-size:1.15rem;">{{ resource.properties.body }}</p>
+    </article>
+
+    <app-case-action-bar
+      [actions]="resource.actions"
+      [running]="state().actionRunning"
+      (run)="onAction($event)"
+    />
+
+    <app-action-payload-form
+      [action]="pendingAction()"
+      (submit)="submitPayload($event)"
+      (cancel)="pendingAction.set(null)"
+    />
+
+    <section style="display:grid; gap:0.75rem; margin-top:1rem;">
+      <h3>Comments</h3>
+
+      @for (comment of comments(resource); track comment.properties.id) {
+        <article class="card">
+          <div style="display:flex; justify-content:space-between; gap:1rem; align-items:start;">
+            <div>
+              <strong>{{ comment.properties.authorName }}</strong>
+              <small style="display:block;">{{ comment.properties.authorHandle }}</small>
+            </div>
+            @if (comment.properties.isAuthor) {
+              <span class="badge own">Your comment</span>
+            }
+            @if (comment.properties.hidden) {
+              <span class="badge">Hidden</span>
+            }
+          </div>
+
+          <p>{{ comment.properties.body }}</p>
+
+          <app-case-action-bar
+            [actions]="comment.actions"
+            [running]="state().actionRunning"
+            (run)="onAction($event)"
+          />
+        </article>
+      }
+
+      @if (business.hasMoreComments(resource)) {
+        <button
+          class="secondary"
+          type="button"
+          [disabled]="state().actionRunning === 'comments-next'"
+          (click)="business.loadMoreComments()"
+        >
+          Load more comments
+        </button>
+      }
+    </section>
+
+    <details>
+      <summary>Raw hypermedia response</summary>
+      <pre>{{ resource.raw | json }}</pre>
+    </details>
+  }
+</section>

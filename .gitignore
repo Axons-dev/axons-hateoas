@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+.angular/
+*.tsbuildinfo
+*.tgz
+.npm-cache/
+
+.env
+.env.*
+!.env.example
+.DS_Store

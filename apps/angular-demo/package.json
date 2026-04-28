@@ -1,0 +1,16 @@
+{
+  "name": "@axons/angular-demo",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MPL-2.0",
+  "author": {
+    "email": "nprin@axons.fr"
+  },
+  "type": "module",
+  "dependencies": {
+    "@axons/hateoas-angular": "workspace:*",
+    "@axons/hateoas-core": "workspace:*",
+    "@axons/hateoas-fetch": "workspace:*",
+    "@axons/hateoas-siren": "workspace:*"
+  }
+}
