@@ -107,6 +107,13 @@ Available actions are computed by the API through `CaseTransitionPolicy`, then e
 
 The second domain is a **social feed** with posts, users, and comments. Post authors can edit or delete their own posts and moderate comments. Other users can read posts, create comments, and edit or delete only their own comments.
 
+## Background Articles
+
+These articles explain the architectural principles behind this demo:
+
+- [REST jusqu'au bout : a quoi sert vraiment HATEOAS sur une API metier](https://axons.fr/blog/rest-jusqu-au-bout-a-quoi-sert-vraiment-hateoas-sur-une-api-metier) explains the broader HATEOAS approach used by the API to expose business capabilities through links and actions.
+- [Angular : separer vue, etat, orchestration](https://axons.fr/blog/angular-separer-vue-etat-orchestration) explains the separation of responsibilities applied in the Angular demo between view components, state, and orchestration logic.
+
 ## Run The Project
 
 Install:
@@ -133,6 +140,10 @@ By default:
 API:     http://localhost:3000
 Angular: http://localhost:4200
 ```
+
+## Contributing
+
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [SECURITY.md](SECURITY.md) before opening issues or pull requests.
 
 ## Important Files
 
@@ -187,22 +198,3 @@ apps/api/src/social/hypermedia/social.resource.ts
 - Angular consumes the client through a dedicated integration.
 - The NestJS package simplifies Siren response composition.
 - The TypeORM integration is planned as assisted discovery, without unsafe automatic exposure.
-
-## What The Demo Does Not Do Yet
-
-- No real database persistence.
-- No Auth0 authentication.
-- No advanced content negotiation.
-- No React/Next.js demo in this first version.
-- No full automatic generation from TypeORM.
-
-## Recommended Direction
-
-The next logical step is to stabilize the `hateoas-core` and `hateoas-nestjs` contracts, then add:
-
-```txt
-@axons/hateoas-react
-@axons/hateoas-next
-@axons/hateoas-hal
-@axons/hateoas-hal-forms
-```
