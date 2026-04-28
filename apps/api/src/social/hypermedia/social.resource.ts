@@ -1,5 +1,5 @@
-import { defineSirenResource, sirenAction, sirenEntity, sirenField, sirenLink } from '@axons/hateoas-nestjs';
-import type { SirenEmbeddedEntity, SirenEntity } from '@axons/hateoas-siren';
+import { defineSirenResource, sirenAction, sirenEntity, sirenField, sirenLink } from '@axonsdev/hateoas-nestjs';
+import type { SirenEmbeddedEntity, SirenEntity } from '@axonsdev/hateoas-siren';
 import type { DemoUser } from '../../common/demo-auth/demo-user.types';
 import { SocialCommentEntity } from '../domain/social-comment.entity';
 import { SocialPermissionPolicy } from '../domain/social-permission.policy';

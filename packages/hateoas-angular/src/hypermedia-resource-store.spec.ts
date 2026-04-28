@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import type { HypermediaResource } from '@axons/hateoas-core';
+import type { HypermediaResource } from '@axonsdev/hateoas-core';
 import { HypermediaResourceStore } from './hypermedia-resource-store';
 
 function createResource(): HypermediaResource<{ id: string }> {

@@ -1,6 +1,6 @@
-# @axons/hateoas-nestjs-typeorm
+# @axonsdev/hateoas-nestjs-typeorm
 
-Assisted TypeORM integration for `@axons/hateoas-nestjs`.
+Assisted TypeORM integration for `@axonsdev/hateoas-nestjs`.
 
 This package helps build Siren resource definitions from TypeORM entities while keeping explicit control over exposed fields.
 
@@ -9,7 +9,7 @@ This package helps build Siren resource definitions from TypeORM entities while 
 - Build a `HypermediaResourceDefinition` for a TypeORM entity.
 - Generate property mappings from an explicit `expose` list.
 - Optionally validate exposed columns against TypeORM metadata.
-- Preserve the same links, actions, profiles, and context model as `@axons/hateoas-nestjs`.
+- Preserve the same links, actions, profiles, and context model as `@axonsdev/hateoas-nestjs`.
 
 ## Main Exports
 
@@ -82,7 +82,7 @@ If an exposed field is not a known column, the function throws an error.
 
 This is a guard against typos and stale resource definitions.
 
-## Relationship To @axons/hateoas-nestjs
+## Relationship To @axonsdev/hateoas-nestjs
 
 The result is a normal `HypermediaResourceDefinition`, so it can be registered in `HateoasModule.forRoot(...)`:
 

@@ -1,7 +1,7 @@
 import type { Provider } from '@angular/core';
-import { createHateoasClient, type HypermediaParser } from '@axons/hateoas-core';
-import { fetchTransport, type FetchHypermediaTransportOptions } from '@axons/hateoas-fetch';
-import { sirenParser } from '@axons/hateoas-siren';
+import { createHateoasClient, type HypermediaParser } from '@axonsdev/hateoas-core';
+import { fetchTransport, type FetchHypermediaTransportOptions } from '@axonsdev/hateoas-fetch';
+import { sirenParser } from '@axonsdev/hateoas-siren';
 import { HATEOAS_CLIENT } from './hateoas-client.token';
 
 export interface ProvideHateoasClientOptions extends FetchHypermediaTransportOptions {

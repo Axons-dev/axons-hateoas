@@ -1,6 +1,6 @@
-# @axons/hateoas-angular
+# @axonsdev/hateoas-angular
 
-Angular integration for `@axons/hateoas-core`.
+Angular integration for `@axonsdev/hateoas-core`.
 
 This package provides Angular dependency injection helpers and a small signal-based resource store. It does not contain domain-specific UI components.
 
@@ -25,7 +25,7 @@ ProvideHateoasClientOptions
 
 ```ts
 import { ApplicationConfig } from '@angular/core';
-import { provideHateoasClient } from '@axons/hateoas-angular';
+import { provideHateoasClient } from '@axonsdev/hateoas-angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -52,7 +52,7 @@ createHateoasClient({
 
 ```ts
 import { inject } from '@angular/core';
-import { HATEOAS_CLIENT } from '@axons/hateoas-angular';
+import { HATEOAS_CLIENT } from '@axonsdev/hateoas-angular';
 
 const client = inject(HATEOAS_CLIENT);
 const resource = await client.get('/api/cases/CASE-001');
@@ -124,4 +124,4 @@ This keeps components from hardcoding business rules or API routes.
 - The package does not include UI components.
 - The package does not own routing.
 - The package does not impose NgRx or any external state library.
-- The default transport is fetch-based through `@axons/hateoas-fetch`.
+- The default transport is fetch-based through `@axonsdev/hateoas-fetch`.

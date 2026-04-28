@@ -1,4 +1,4 @@
-# @axons/hateoas-nestjs
+# @axonsdev/hateoas-nestjs
 
 NestJS helpers for composing Siren hypermedia responses.
 

@@ -6,7 +6,7 @@ import type {
   HypermediaParser,
   HypermediaResourceModel,
   HttpMethod,
-} from '@axons/hateoas-core';
+} from '@axonsdev/hateoas-core';
 import type { SirenAction, SirenEmbeddedEntity, SirenEntity, SirenField, SirenLink } from './siren.types';
 
 export const SIREN_MEDIA_TYPE = 'application/vnd.siren+json';

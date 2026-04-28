@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import type { HypermediaAction } from '@axons/hateoas-core';
+import type { HypermediaAction } from '@axonsdev/hateoas-core';
 
 @Component({
   selector: 'app-case-action-bar',

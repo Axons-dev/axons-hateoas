@@ -1,5 +1,5 @@
-import type { HypermediaRequest, HypermediaResponse, HypermediaTransport } from '@axons/hateoas-core';
-import { HypermediaHttpError } from '@axons/hateoas-core';
+import type { HypermediaRequest, HypermediaResponse, HypermediaTransport } from '@axonsdev/hateoas-core';
+import { HypermediaHttpError } from '@axonsdev/hateoas-core';
 
 export interface FetchHypermediaTransportOptions {
   baseUrl?: string;

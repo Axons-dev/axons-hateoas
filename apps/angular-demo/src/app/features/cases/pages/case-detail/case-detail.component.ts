@@ -1,7 +1,7 @@
 import { JsonPipe } from '@angular/common';
 import { Component, OnInit, effect, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import type { HypermediaAction } from '@axons/hateoas-core';
+import type { HypermediaAction } from '@axonsdev/hateoas-core';
 import { DemoRoleService } from '../../../../shared/demo-role.service';
 import { ActionPayloadFormComponent } from '../../components/action-payload-form.component';
 import { CaseActionBarComponent } from '../../components/case-action-bar.component';

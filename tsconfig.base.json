@@ -11,12 +11,12 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@axons/hateoas-core": ["packages/hateoas-core/src/index.ts"],
-      "@axons/hateoas-siren": ["packages/hateoas-siren/src/index.ts"],
-      "@axons/hateoas-fetch": ["packages/hateoas-fetch/src/index.ts"],
-      "@axons/hateoas-angular": ["packages/hateoas-angular/src/index.ts"],
-      "@axons/hateoas-nestjs": ["packages/hateoas-nestjs/src/index.ts"],
-      "@axons/hateoas-nestjs-typeorm": ["packages/hateoas-nestjs-typeorm/src/index.ts"]
+      "@axonsdev/hateoas-core": ["packages/hateoas-core/src/index.ts"],
+      "@axonsdev/hateoas-siren": ["packages/hateoas-siren/src/index.ts"],
+      "@axonsdev/hateoas-fetch": ["packages/hateoas-fetch/src/index.ts"],
+      "@axonsdev/hateoas-angular": ["packages/hateoas-angular/src/index.ts"],
+      "@axonsdev/hateoas-nestjs": ["packages/hateoas-nestjs/src/index.ts"],
+      "@axonsdev/hateoas-nestjs-typeorm": ["packages/hateoas-nestjs-typeorm/src/index.ts"]
     }
   }
 }

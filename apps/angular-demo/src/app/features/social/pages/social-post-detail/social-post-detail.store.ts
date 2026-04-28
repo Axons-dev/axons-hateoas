@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HypermediaResourceStore } from '@axons/hateoas-angular';
-import type { DefaultHypermediaResource, HypermediaEmbeddedEntity } from '@axons/hateoas-core';
+import { HypermediaResourceStore } from '@axonsdev/hateoas-angular';
+import type { DefaultHypermediaResource, HypermediaEmbeddedEntity } from '@axonsdev/hateoas-core';
 import type { SocialPostProperties } from '../../models/social.model';
 
 @Injectable()

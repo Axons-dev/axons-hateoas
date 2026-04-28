@@ -1,5 +1,5 @@
 {
-  "name": "@axons/hateoas-siren",
+  "name": "@axonsdev/hateoas-siren",
   "version": "0.1.0",
   "license": "MPL-2.0",
   "author": {
@@ -29,6 +29,6 @@
     "prepack": "tsc -b tsconfig.json"
   },
   "dependencies": {
-    "@axons/hateoas-core": "workspace:^"
+    "@axonsdev/hateoas-core": "workspace:^"
   }
 }

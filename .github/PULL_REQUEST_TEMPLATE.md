@@ -4,12 +4,12 @@ Describe the change and the problem it solves.
 
 ## Package or Area
 
-- [ ] `@axons/hateoas-core`
-- [ ] `@axons/hateoas-siren`
-- [ ] `@axons/hateoas-fetch`
-- [ ] `@axons/hateoas-angular`
-- [ ] `@axons/hateoas-nestjs`
-- [ ] `@axons/hateoas-nestjs-typeorm`
+- [ ] `@axonsdev/hateoas-core`
+- [ ] `@axonsdev/hateoas-siren`
+- [ ] `@axonsdev/hateoas-fetch`
+- [ ] `@axonsdev/hateoas-angular`
+- [ ] `@axonsdev/hateoas-nestjs`
+- [ ] `@axonsdev/hateoas-nestjs-typeorm`
 - [ ] Demo API
 - [ ] Demo frontend
 - [ ] Documentation

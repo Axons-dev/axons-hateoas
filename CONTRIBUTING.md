@@ -2,7 +2,7 @@
 
 Thank you for considering a contribution to Axons HATEOAS.
 
-This project is an open source TypeScript workspace published as separate npm packages under the `@axons` scope. Contributions should keep the packages small, composable, and framework-specific only where that package boundary requires it.
+This project is an open source TypeScript workspace published as separate npm packages under the `@axonsdev` scope. Contributions should keep the packages small, composable, and framework-specific only where that package boundary requires it.
 
 ## Code of Conduct
 
@@ -57,14 +57,14 @@ Application demos live in `apps/`.
 
 Reusable libraries live in `packages/`:
 
-- `@axons/hateoas-core`: framework-agnostic client primitives;
-- `@axons/hateoas-siren`: Siren parsing;
-- `@axons/hateoas-fetch`: Fetch transport;
-- `@axons/hateoas-angular`: Angular integration;
-- `@axons/hateoas-nestjs`: NestJS response composition;
-- `@axons/hateoas-nestjs-typeorm`: optional TypeORM helpers.
+- `@axonsdev/hateoas-core`: framework-agnostic client primitives;
+- `@axonsdev/hateoas-siren`: Siren parsing;
+- `@axonsdev/hateoas-fetch`: Fetch transport;
+- `@axonsdev/hateoas-angular`: Angular integration;
+- `@axonsdev/hateoas-nestjs`: NestJS response composition;
+- `@axonsdev/hateoas-nestjs-typeorm`: optional TypeORM helpers.
 
-Keep cross-package dependencies directed from integrations toward core packages. Do not add framework-specific imports to `@axons/hateoas-core`.
+Keep cross-package dependencies directed from integrations toward core packages. Do not add framework-specific imports to `@axonsdev/hateoas-core`.
 
 ## Contribution Rules
 

@@ -1,4 +1,4 @@
-import type { SirenAction, SirenEntity, SirenLink } from '@axons/hateoas-siren';
+import type { SirenAction, SirenEntity, SirenLink } from '@axonsdev/hateoas-siren';
 import type { HypermediaResourceDefinition, ResourceComposeContext, ServiceResolver } from '../registry/resource-definition';
 import { ResourceRegistry } from '../registry/resource-registry';
 import { RouteUrlResolver } from '../url/route-url-resolver';

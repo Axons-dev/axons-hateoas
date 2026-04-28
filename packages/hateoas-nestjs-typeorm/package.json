@@ -1,5 +1,5 @@
 {
-  "name": "@axons/hateoas-nestjs-typeorm",
+  "name": "@axonsdev/hateoas-nestjs-typeorm",
   "version": "0.1.0",
   "license": "MPL-2.0",
   "author": {
@@ -32,6 +32,6 @@
     "typeorm": ">=0.3.0"
   },
   "dependencies": {
-    "@axons/hateoas-nestjs": "workspace:^"
+    "@axonsdev/hateoas-nestjs": "workspace:^"
   }
 }

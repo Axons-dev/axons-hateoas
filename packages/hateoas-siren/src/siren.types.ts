@@ -1,4 +1,4 @@
-import type { HttpMethod } from '@axons/hateoas-core';
+import type { HttpMethod } from '@axonsdev/hateoas-core';
 
 export interface SirenLink {
   rel: string[];

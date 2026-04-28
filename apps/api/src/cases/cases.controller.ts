@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Inject, Param, Patch, Post } from '@nestjs/common';
-import { HateoasService, SirenResponse, sirenEntity, sirenLink } from '@axons/hateoas-nestjs';
+import { HateoasService, SirenResponse, sirenEntity, sirenLink } from '@axonsdev/hateoas-nestjs';
 import { CurrentDemoUser } from '../common/demo-auth/current-demo-user.decorator';
 import type { DemoUser } from '../common/demo-auth/demo-user.types';
 import { CaseEntity } from './domain/case.entity';

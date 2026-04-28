@@ -1,5 +1,5 @@
 {
-  "name": "@axons/api",
+  "name": "@axonsdev/api",
   "version": "0.1.0",
   "type": "module",
   "private": true,
@@ -8,6 +8,6 @@
     "email": "nprin@axons.fr"
   },
   "dependencies": {
-    "@axons/hateoas-nestjs": "workspace:*"
+    "@axonsdev/hateoas-nestjs": "workspace:*"
   }
 }

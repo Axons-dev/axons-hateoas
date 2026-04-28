@@ -1,6 +1,6 @@
-# @axons/hateoas-siren
+# @axonsdev/hateoas-siren
 
-Siren media type support for `@axons/hateoas-core`.
+Siren media type support for `@axonsdev/hateoas-core`.
 
 This package defines Siren TypeScript types and a parser that converts Siren entities into the core normalized hypermedia model.
 
@@ -35,9 +35,9 @@ The parser supports content types that include this media type.
 ## Basic Usage
 
 ```ts
-import { createHateoasClient } from '@axons/hateoas-core';
-import { fetchTransport } from '@axons/hateoas-fetch';
-import { sirenParser } from '@axons/hateoas-siren';
+import { createHateoasClient } from '@axonsdev/hateoas-core';
+import { fetchTransport } from '@axonsdev/hateoas-fetch';
+import { sirenParser } from '@axonsdev/hateoas-siren';
 
 const client = createHateoasClient({
   transport: fetchTransport({ baseUrl: 'http://localhost:3000' }),

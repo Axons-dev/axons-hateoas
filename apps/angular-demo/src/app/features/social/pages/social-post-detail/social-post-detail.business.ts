@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { HATEOAS_CLIENT } from '@axons/hateoas-angular';
-import type { HypermediaAction, HypermediaResource } from '@axons/hateoas-core';
+import { HATEOAS_CLIENT } from '@axonsdev/hateoas-angular';
+import type { HypermediaAction, HypermediaResource } from '@axonsdev/hateoas-core';
 import type { SocialPostProperties } from '../../models/social.model';
 import { SocialPostDetailStore } from './social-post-detail.store';
 

@@ -1,4 +1,4 @@
-# @axons/hateoas-core
+# @axonsdev/hateoas-core
 
 Framework-agnostic TypeScript core for consuming hypermedia APIs.
 
@@ -44,9 +44,9 @@ UnsupportedMediaTypeError
 ## Client Construction
 
 ```ts
-import { createHateoasClient } from '@axons/hateoas-core';
-import { fetchTransport } from '@axons/hateoas-fetch';
-import { sirenParser } from '@axons/hateoas-siren';
+import { createHateoasClient } from '@axonsdev/hateoas-core';
+import { fetchTransport } from '@axonsdev/hateoas-fetch';
+import { sirenParser } from '@axonsdev/hateoas-siren';
 
 const client = createHateoasClient({
   transport: fetchTransport({

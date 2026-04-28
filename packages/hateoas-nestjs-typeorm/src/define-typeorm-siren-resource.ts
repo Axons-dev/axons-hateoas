@@ -1,5 +1,5 @@
 import type { DataSource, EntityTarget } from 'typeorm';
-import { defineSirenResource, type HypermediaResourceDefinition } from '@axons/hateoas-nestjs';
+import { defineSirenResource, type HypermediaResourceDefinition } from '@axonsdev/hateoas-nestjs';
 
 export interface TypeOrmSirenResourceOptions<TEntity, TContext = unknown>
   extends Omit<HypermediaResourceDefinition<TEntity, TContext>, 'entity' | 'properties'> {

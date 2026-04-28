@@ -1,8 +1,8 @@
 import type { Provider } from '@angular/core';
-import { HATEOAS_CLIENT } from '@axons/hateoas-angular';
-import { createHateoasClient } from '@axons/hateoas-core';
-import { fetchTransport } from '@axons/hateoas-fetch';
-import { sirenParser } from '@axons/hateoas-siren';
+import { HATEOAS_CLIENT } from '@axonsdev/hateoas-angular';
+import { createHateoasClient } from '@axonsdev/hateoas-core';
+import { fetchTransport } from '@axonsdev/hateoas-fetch';
+import { sirenParser } from '@axonsdev/hateoas-siren';
 import { DemoRoleService } from './shared/demo-role.service';
 
 export const appConfigProviders: Provider[] = [

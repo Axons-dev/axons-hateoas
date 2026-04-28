@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { HypermediaHttpError } from '@axons/hateoas-core';
+import { HypermediaHttpError } from '@axonsdev/hateoas-core';
 import { FetchHypermediaTransport, fetchTransport } from './fetch-hypermedia-transport';
 
 function jsonResponse(body: unknown, init: ResponseInit = {}): Response {

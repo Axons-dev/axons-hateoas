@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { HateoasModule } from '@axons/hateoas-nestjs';
+import { HateoasModule } from '@axonsdev/hateoas-nestjs';
 import { CasesModule } from './cases/cases.module';
 import { caseResource } from './cases/hypermedia/case.resource';
 import { socialPostResource } from './social/hypermedia/social.resource';

@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import type { HypermediaResource } from '@axons/hateoas-core';
+import type { HypermediaResource } from '@axonsdev/hateoas-core';
 
 export interface CaseListState {
   collection: HypermediaResource | null;

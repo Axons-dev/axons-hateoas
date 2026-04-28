@@ -1,6 +1,6 @@
-# @axons/hateoas-fetch
+# @axonsdev/hateoas-fetch
 
-Fetch-based transport for `@axons/hateoas-core`.
+Fetch-based transport for `@axonsdev/hateoas-core`.
 
 This package adapts the platform `fetch` API to the `HypermediaTransport` contract. It is usable in browsers, Node runtimes that provide `fetch`, and tests that inject a custom `fetchFn`.
 
@@ -24,9 +24,9 @@ FetchHypermediaTransportOptions
 ## Basic Usage
 
 ```ts
-import { createHateoasClient } from '@axons/hateoas-core';
-import { fetchTransport } from '@axons/hateoas-fetch';
-import { sirenParser } from '@axons/hateoas-siren';
+import { createHateoasClient } from '@axonsdev/hateoas-core';
+import { fetchTransport } from '@axonsdev/hateoas-fetch';
+import { sirenParser } from '@axonsdev/hateoas-siren';
 
 const client = createHateoasClient({
   transport: fetchTransport({

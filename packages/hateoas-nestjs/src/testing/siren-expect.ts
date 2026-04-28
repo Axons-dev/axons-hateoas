@@ -1,4 +1,4 @@
-import type { SirenEntity } from '@axons/hateoas-siren';
+import type { SirenEntity } from '@axonsdev/hateoas-siren';
 
 export function hasSirenAction(entity: SirenEntity, actionName: string): boolean {
   return Boolean(entity.actions?.some((action) => action.name === actionName));

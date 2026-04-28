@@ -1,5 +1,5 @@
 {
-  "name": "@axons/hateoas-angular",
+  "name": "@axonsdev/hateoas-angular",
   "version": "0.1.0",
   "license": "MPL-2.0",
   "author": {
@@ -32,8 +32,8 @@
     "@angular/core": ">=17.0.0"
   },
   "dependencies": {
-    "@axons/hateoas-core": "workspace:^",
-    "@axons/hateoas-fetch": "workspace:^",
-    "@axons/hateoas-siren": "workspace:^"
+    "@axonsdev/hateoas-core": "workspace:^",
+    "@axonsdev/hateoas-fetch": "workspace:^",
+    "@axonsdev/hateoas-siren": "workspace:^"
   }
 }

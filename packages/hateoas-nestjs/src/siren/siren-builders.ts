@@ -1,5 +1,5 @@
-import type { HttpMethod } from '@axons/hateoas-core';
-import type { SirenAction, SirenEntity, SirenField, SirenLink } from '@axons/hateoas-siren';
+import type { HttpMethod } from '@axonsdev/hateoas-core';
+import type { SirenAction, SirenEntity, SirenField, SirenLink } from '@axonsdev/hateoas-siren';
 
 export class SirenEntityBuilder<TProperties = Record<string, unknown>> {
   private readonly classes = new Set<string>();

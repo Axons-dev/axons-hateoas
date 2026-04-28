@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { HATEOAS_CLIENT } from '@axons/hateoas-angular';
+import { HATEOAS_CLIENT } from '@axonsdev/hateoas-angular';
 import type { SocialPostProperties } from '../../models/social.model';
 import { SocialFeedStore } from './social-feed.store';
 

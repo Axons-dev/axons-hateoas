@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Security fixes are provided for the latest published minor version of each `@axons/hateoas-*` package.
+Security fixes are provided for the latest published minor version of each `@axonsdev/hateoas-*` package.
 
 Pre-1.0 releases may include breaking changes, but security reports are still welcome and will be handled seriously.
 

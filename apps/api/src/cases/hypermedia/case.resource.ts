@@ -1,4 +1,4 @@
-import { defineSirenResource, sirenAction, sirenField, sirenLink } from '@axons/hateoas-nestjs';
+import { defineSirenResource, sirenAction, sirenField, sirenLink } from '@axonsdev/hateoas-nestjs';
 import type { DemoUser } from '../../common/demo-auth/demo-user.types';
 import { CaseTransitionPolicy } from '../domain/case-transition.policy';
 import { CaseEntity } from '../domain/case.entity';

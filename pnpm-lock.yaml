@@ -75,22 +75,22 @@ importers:
 
   apps/angular-demo:
     dependencies:
-      '@axons/hateoas-angular':
+      '@axonsdev/hateoas-angular':
         specifier: workspace:*
         version: link:../../packages/hateoas-angular
-      '@axons/hateoas-core':
+      '@axonsdev/hateoas-core':
         specifier: workspace:*
         version: link:../../packages/hateoas-core
-      '@axons/hateoas-fetch':
+      '@axonsdev/hateoas-fetch':
         specifier: workspace:*
         version: link:../../packages/hateoas-fetch
-      '@axons/hateoas-siren':
+      '@axonsdev/hateoas-siren':
         specifier: workspace:*
         version: link:../../packages/hateoas-siren
 
   apps/api:
     dependencies:
-      '@axons/hateoas-nestjs':
+      '@axonsdev/hateoas-nestjs':
         specifier: workspace:*
         version: link:../../packages/hateoas-nestjs
 
@@ -99,13 +99,13 @@ importers:
       '@angular/core':
         specifier: '>=17.0.0'
         version: 21.2.10(@angular/compiler@21.2.10)(rxjs@7.8.2)(zone.js@0.15.1)
-      '@axons/hateoas-core':
+      '@axonsdev/hateoas-core':
         specifier: workspace:^
         version: link:../hateoas-core
-      '@axons/hateoas-fetch':
+      '@axonsdev/hateoas-fetch':
         specifier: workspace:^
         version: link:../hateoas-fetch
-      '@axons/hateoas-siren':
+      '@axonsdev/hateoas-siren':
         specifier: workspace:^
         version: link:../hateoas-siren
 
@@ -113,16 +113,16 @@ importers:
 
   packages/hateoas-fetch:
     dependencies:
-      '@axons/hateoas-core':
+      '@axonsdev/hateoas-core':
         specifier: workspace:^
         version: link:../hateoas-core
 
   packages/hateoas-nestjs:
     dependencies:
-      '@axons/hateoas-core':
+      '@axonsdev/hateoas-core':
         specifier: workspace:^
         version: link:../hateoas-core
-      '@axons/hateoas-siren':
+      '@axonsdev/hateoas-siren':
         specifier: workspace:^
         version: link:../hateoas-siren
       '@nestjs/common':
@@ -131,7 +131,7 @@ importers:
 
   packages/hateoas-nestjs-typeorm:
     dependencies:
-      '@axons/hateoas-nestjs':
+      '@axonsdev/hateoas-nestjs':
         specifier: workspace:^
         version: link:../hateoas-nestjs
       typeorm:
@@ -140,7 +140,7 @@ importers:
 
   packages/hateoas-siren:
     dependencies:
-      '@axons/hateoas-core':
+      '@axonsdev/hateoas-core':
         specifier: workspace:^
         version: link:../hateoas-core
 

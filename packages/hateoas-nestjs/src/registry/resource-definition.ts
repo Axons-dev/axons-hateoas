@@ -1,4 +1,4 @@
-import type { SirenAction, SirenLink } from '@axons/hateoas-siren';
+import type { SirenAction, SirenLink } from '@axonsdev/hateoas-siren';
 import type { RouteUrlResolver } from '../url/route-url-resolver';
 
 export interface ResourceComposeContext<TEntity, TContext = unknown> {

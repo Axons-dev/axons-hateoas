@@ -27,11 +27,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@axons/hateoas-core': resolve('./packages/hateoas-core/src/index.ts'),
-      '@axons/hateoas-siren': resolve('./packages/hateoas-siren/src/index.ts'),
-      '@axons/hateoas-fetch': resolve('./packages/hateoas-fetch/src/index.ts'),
-      '@axons/hateoas-nestjs': resolve('./packages/hateoas-nestjs/src/index.ts'),
-      '@axons/hateoas-angular': resolve('./packages/hateoas-angular/src/index.ts'),
+      '@axonsdev/hateoas-core': resolve('./packages/hateoas-core/src/index.ts'),
+      '@axonsdev/hateoas-siren': resolve('./packages/hateoas-siren/src/index.ts'),
+      '@axonsdev/hateoas-fetch': resolve('./packages/hateoas-fetch/src/index.ts'),
+      '@axonsdev/hateoas-nestjs': resolve('./packages/hateoas-nestjs/src/index.ts'),
+      '@axonsdev/hateoas-angular': resolve('./packages/hateoas-angular/src/index.ts'),
     },
   },
 });

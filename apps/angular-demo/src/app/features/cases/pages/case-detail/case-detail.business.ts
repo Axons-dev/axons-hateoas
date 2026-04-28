@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { HATEOAS_CLIENT } from '@axons/hateoas-angular';
+import { HATEOAS_CLIENT } from '@axonsdev/hateoas-angular';
 import { CaseDetailStore } from './case-detail.store';
 import type { CaseProperties } from '../../models/case.model';
 
