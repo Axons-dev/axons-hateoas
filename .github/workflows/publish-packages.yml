@@ -48,6 +48,19 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           cache: pnpm
 
+      - name: Configure npm authentication
+        run: |
+          if [ -z "$NODE_AUTH_TOKEN" ]; then
+            echo "The NPM_TOKEN repository secret is missing or empty."
+            exit 1
+          fi
+
+          printf "registry=https://registry.npmjs.org/\n" > ~/.npmrc
+          printf "//registry.npmjs.org/:_authToken=%s\n" "$NODE_AUTH_TOKEN" >> ~/.npmrc
+          npm whoami --registry https://registry.npmjs.org/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
